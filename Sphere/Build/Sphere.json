@@ -1,6 +1,6 @@
 {
-"companyName": "NYStyle",
-"productName": "Image2PointCloud",
+"companyName": "DefaultCompany",
+"productName": "pointcloudpuzzleunity",
 "productVersion": "0.1",
 "dataUrl": "Sphere.data.unityweb",
 "wasmCodeUrl": "Sphere.wasm.code.unityweb",
