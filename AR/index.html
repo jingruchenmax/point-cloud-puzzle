@@ -11,15 +11,17 @@
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<!-- include animation-mixer for A-Frame -->
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <a-assets>
-      <a-asset-item id="cake-obj" src=""></a-asset-item>
-      <a-asset-item id="cake-mtl" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/cake.mtl"></a-asset-item>
+      <a-asset-item id="cabin" src="https://cdn.glitch.com/73380add-4028-4f46-9858-066d20db5532%2FBee.glb"></a-asset-item>
+      
   </a-assets>
 
   <a-marker-camera present="hiro">
-      <a-obj-model src="#cake-obj" mtl="#cake-mtl" rotation="60 20 -155" scale="1 0.5 1"></a-obj-model>                
+      <a-entity gltf-model="#cabin" scale="0.08 0.08 0.08" animation-mixer></a-entity>              
   </a-marker-camera>
   </a-scene>
 </body>
